@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,15 @@
     <title>Einstein</title>
 
     <link rel="stylesheet" href="css/style-gral.css">
+
+
+    <!--Scripts para importar iconos de ionic.io-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+    <!--Script de barra lateral y menu hamburguesa-->
+    <script type="module" src="/js/barraLateralYMenuHamburguesa.js" defer></script>
+
 </head>
 <body>
 
@@ -183,47 +192,6 @@
         </div>
 
     </section>
-
-    <!--Scripts para importar iconos de ionic.io-->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <!--Script de barra lateral y menu hamburguesa-->
-
-    <script>
-
-        let barraLateral = document.querySelector(".columna-navegacion")
-        let navigation = document.querySelector(".pag-Navegacion")
-        let menutoggle = document.querySelector(".toggle");
-
-        /*Hover en barra lateral y en menu hamburguesa*/
-
-        const mouseDentro = () => {
-	    menutoggle.classList.add("hover-menu");
-        }
-        const mouseFuera = () => {
-	    menutoggle.classList.remove("hover-menu");
-        }
-
-        barraLateral.addEventListener("mouseenter",mouseDentro);
-        barraLateral.addEventListener("mouseleave",mouseFuera);
-        menutoggle.addEventListener("mouseenter",mouseDentro);
-        menutoggle.addEventListener("mouseleave",mouseFuera);
-
-        /*Funcion Menu hamburguesa*/
-
-        menutoggle.onclick = function(){
-            menutoggle.classList.toggle("active");
-            navigation.classList.toggle("active");
-        }
-
-        barraLateral.onclick = function(){
-            menutoggle.classList.toggle("active");
-            navigation.classList.toggle("active");
-        }
-
-    </script>
 
 </body>
 </html>
