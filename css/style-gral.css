@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb
                       violin = 11000
                       menu hamburguesa = 11000
                       tarjetas nav = 8500
+                      enlaces tipo esfera (en nav): 8500
                                          */
 
 /*Columna de navegacion y musica*/    
@@ -591,31 +592,102 @@ body::-webkit-scrollbar-thumb
     transform: scale(1) rotate(180deg) scaleY(1) scaleX(1);
 }
 
-/*Enlace interno Inicio*/
+/*Box enlaces Inicio, Juegos y mas*/
 
-.div-inicio-pag-nav
+.box-enlaces-inicio-games-more
 {
+    width: 60vw;
+    height: 20%;
     position: absolute;
-    left: 28%;
     top: 5%;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    left: calc(4vw + 18vw);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    transition: all 0.5s ease-out;
 }
-.div-inicio-pag-nav:hover
-{
-    transition: all 0.5s ease-out;
-    top: 3%;
+/*Media Querys de box con enlaces tipo esferas*/
+@media( max-width : 1024px){
+    .box-enlaces-inicio-games-more
+    {
+        top: calc(25% - 10vw);
+    }
 }
-.p-inicio-pag-nav
+@media(max-width : 991px) {
+    .box-enlaces-inicio-games-more 
+    {
+        top: calc(25% - 10vw);
+        left: calc(7vw + 16.5vw);
+    }
+}
+@media(max-width : 735px) {
+    .box-enlaces-inicio-games-more 
+    {
+        top: calc(10%);
+    }
+}
+@media(max-width : 479px) {
+    .box-enlaces-inicio-games-more 
+    {
+        top: calc(12%);
+        width: 80vw;
+        left: 10vw;
+    }
+}
+
+/*Modelo del contenedor de los Enlaces internos (Pag navegacion) de tipo esfera*/
+.div-contenedor-esfera
 {
+    min-width: 70px;
+    width: 6.375vw;
+    min-height: 70px;
+    height: 6.375vw;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8500;
+    top: 0;
+    position: relative;
+}
+.div-contenedor-esfera:hover
+{
+    transition: all 0.5s ease-out;
+    top: -5px;
+}
+.a-enlaces-esfera
+{
+    font-size: calc(0.6em + 0.45vw);
+    text-decoration: none;
+}
+/*Enlace interno (Pag navegacion) de Inicio*/
+.div-inicio-pag-nav
+{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+.pag-nav-enlace-inicio
+{
+    
+}
+/*Enlace interno (Pag navegacion) de Juegos*/
+.div-Juegos-pag-nav
+{
+    background-color: rgb(149, 149, 231);
+}
+.pag-nav-enlace-juegos
+{
+    
+}
+/*Enlace interno (Pag navegacion) de Mas*/
+.div-Mas-pag-nav
+{
+    background-color: rgb(104, 211, 211);
+}
+.pag-nav-enlace-mas
+{
+    
 }
