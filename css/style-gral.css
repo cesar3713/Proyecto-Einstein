@@ -556,43 +556,7 @@ body::-webkit-scrollbar-thumb
     line-height: 1.5;
 }
 
-/*Ramas svg*/
-
-.rama1
-{
-    position: absolute;
-    top: 65%;
-    left: 30%;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    width: 30%;
-    transform: scale(1) rotate(65deg) scaleY(1.1) scaleX(1.1);
-}
-.rama2
-{
-    position: absolute;
-    top: -30%;
-    left: 40%;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-    transform: scale(1) rotate(270deg) scaleY(1) scaleX(1);
-}
-.rama3
-{
-    position: absolute;
-    top: -10%;
-    left: 20%;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    width: 20%;
-    transform: scale(1) rotate(180deg) scaleY(1) scaleX(1);
-}
-
-/*Box enlaces Inicio, Juegos y mas*/
+/*Box enlaces Inicio, Juegos y mas (Box PADRE General)*/
 
 .box-enlaces-inicio-games-more
 {
@@ -606,7 +570,7 @@ body::-webkit-scrollbar-thumb
     justify-content: space-around;
     align-items: center;
 }
-/*Media Querys de box con enlaces tipo esferas*/
+/*Media Querys de box con enlaces Inicio, Juegos y mas (tipo esferas), Box PADRE General*/
 @media( max-width : 1024px){
     .box-enlaces-inicio-games-more
     {
@@ -634,8 +598,15 @@ body::-webkit-scrollbar-thumb
         left: 10vw;
     }
 }
+/*Divs Contenedores de ramas junto a enlaces tipo esfera dentro del contenedor padre anterior*/
+.box-contiene-rama-junto-a-esfera
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/*Modelo del contenedor de los Enlaces internos (Pag navegacion) de tipo esfera*/
+/*Modelo (esferico) del contenedor de los Enlaces internos (Pag navegacion) de tipo esfera*/
 .div-contenedor-esfera
 {
     min-width: 70px;
@@ -689,5 +660,42 @@ body::-webkit-scrollbar-thumb
 }
 .pag-nav-enlace-mas
 {
-    
+   
+}
+
+/*Ramas svg*/
+/*Estilo general de todas las ramas*/
+.ramas-estilo-general
+{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Ramas de Enlaces tipo esfera*/
+.ramas-de-esferas
+{
+    width: 27%;
+    min-width: 150px;
+    transform: scale(1) rotate(180deg) scaleY(1) scaleX(1);
+    position: absolute;
+}
+
+/*Ramas que no son de las esferas*/
+.rama1 
+{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 30%;
+    transform: scale(1) rotate(65deg) scaleY(1.1) scaleX(1.1);
+}
+.rama2
+{
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    width: 100%;
+    transform: scale(1) rotate(270deg) scaleY(1) scaleX(1);
+
 }
