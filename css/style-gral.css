@@ -265,7 +265,14 @@ body::-webkit-scrollbar-thumb
     z-index: 7500;
     background-color: #e9f0f1;
 }
-
+/*Media Querys de Pagina de Navegacion*/
+@media( max-width : 479px)
+{
+    .pag-Navegacion
+    {
+        transform: translate(0%, -100%);
+    }
+}
 .pag-Navegacion.active {
     opacity: 1;
     transform: translate(0, 0);
@@ -285,30 +292,34 @@ body::-webkit-scrollbar-thumb
     width: 75%;
     height: 60%;
     position: relative;
-    top: calc(55% - 7vw);
-    left: 4vw;
+    top: calc(50% - 7vw);
+    left: 8vw;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    /*border: 1px solid red;*/
 }
 
 /*Media Querys de Box de Tarjetas*/
-
+@media (max-width : 1024px) {
+    .box-tarjetas 
+    {
+        width: 93vw;
+        left: 5.5vw;
+        top: calc(45%);
+        justify-content: space-evenly;
+    }
+}
 @media (max-width : 991px) {
     .box-tarjetas 
     {
         left: 7vw;
     }
 }
-@media (max-width : 1024px) {
+@media (max-width : 581px) {
     .box-tarjetas 
     {
         width: 93vw;
-        top: calc(50%);
-    }
-}
-@media (max-width : 630px) {
-    .box-tarjetas 
-    {
-        width: 93vw;
-        top: calc(50%);
+        top: calc(35%);
     }
 }
 @media (max-width : 537px) {
@@ -324,6 +335,8 @@ body::-webkit-scrollbar-thumb
         width: 100vw;
         top: calc(35%);
         left: 0vw;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }
 /**/
@@ -368,7 +381,7 @@ body::-webkit-scrollbar-thumb
         border-bottom-right-radius: 13.375vw;
     }
 }
-@media (max-width : 550px) {
+@media (max-width : 582px) {
     .tarjeta-nav 
     {
         min-width: 150px;
@@ -682,20 +695,159 @@ body::-webkit-scrollbar-thumb
 }
 
 /*Ramas que no son de las esferas*/
-.rama1 
+
+.Box-contenedor-ramas-de-baseDePagina-y-ladoDerecho
+{
+    width: 96vw;
+    left: 4vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Media Querys del contenedor de las ramas del lado derecho y de la base de pagina Navegacion (del div anterior)*/
+@media(max-width : 991px){
+    .Box-contenedor-ramas-de-baseDePagina-y-ladoDerecho
+    {
+        left: 7vw;
+        width: 93vw;
+    }
+}
+@media(max-width : 479px) {
+    .Box-contenedor-ramas-de-baseDePagina-y-ladoDerecho
+    {
+        left: 0;
+        width: 100vw;
+    }
+}
+/**/
+.rama-base-de-pagina
 {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 30%;
-    width: 30%;
+    width: 31%;
     transform: scale(1) rotate(65deg) scaleY(1.1) scaleX(1.1);
 }
-.rama2
+/*Media Querys de rama de base de pagina*/
+@media(max-width : 1310px)
 {
-    position: absolute;
-    top: -30%;
-    left: 40%;
+    .rama-base-de-pagina
+    {
+        left: 30%;
+        width: 32%;
+        top: 60%;
+    }
+}
+@media(max-width : 1024px) {
+    .rama-base-de-pagina 
+    {
+        left: 34%;
+        top: 64%;
+        width: 40%;
+    }
+}
+@media(max-width : 840px) {
+    .rama-base-de-pagina
+    {
+        left: 33.5%;
+        top: 67%;
+        width: 43%;
+    }
+}
+@media(max-width : 730px) {
+    .rama-base-de-pagina 
+    {
+        left: 32.5%;
+        top: 65%;
+        width: 45%;
+    }
+}
+@media(max-width : 581px) 
+{
+    .rama-base-de-pagina 
+    {
+        left: 38%;
+        top: 46%;
+        width: 30%;
+        transform: scale(1.1) rotate(17deg) scaleY(1.1) scaleX(1.1);
+    }
+}
+@media(max-width : 425px) 
+{
+    .rama-base-de-pagina 
+    {
+        left: 39%;
+        top: 50%;
+        width: 30%;
+        transform: scale(1.1) rotate(17deg) scaleY(1.1) scaleX(1.1);
+    }
+}
+@media(max-width : 346px) {
+    .rama-base-de-pagina {
+        left: 40%;
+        top: 54%;
+        width: 30%;
+        transform: scale(1.1) rotate(17deg) scaleY(1.1) scaleX(1.1);
+    }
+}
+.rama-lado-derecho
+{
+    position: relative;
+    top: 10%;
+    right: -40vw;
     width: 100%;
-    transform: scale(1) rotate(270deg) scaleY(1) scaleX(1);
-
+    transform: scale(1.1) rotate(270deg) scaleY(1) scaleX(1);
+}
+/*Media Querys de rama de lado derecho*/
+@media(max-width : 1182px)
+{
+    .rama-lado-derecho
+    {
+        transform: scale(1.3) rotate(270deg) scaleY(1) scaleX(1);
+    }
+}
+@media(max-width : 1024px) 
+{
+    .rama-lado-derecho 
+    {
+        transform: scale(1.4) rotate(270deg) scaleY(1) scaleX(1);
+        right: -50vw;
+        top: -7%;
+    }
+}
+@media(max-width : 900px){
+    .rama-lado-derecho
+    {
+        transform: scale(1.6) rotate(270deg) scaleY(1) scaleX(1);
+    }
+}
+@media(max-width : 700px) {
+    .rama-lado-derecho 
+    {
+        transform: scale(1.8) rotate(270deg) scaleY(1) scaleX(1);
+    }
+}
+@media(max-width : 581px) {
+    .rama-lado-derecho 
+    {
+        transform: scale(2) rotate(270deg) scaleY(1) scaleX(1);
+        top: 0%;
+    }
+}
+@media(max-width : 479px) {
+    .rama-lado-derecho {
+        transform: scale(2) rotate(270deg) scaleY(1) scaleX(1);
+        top: 10%;
+        right: -47.5vw;
+    }
+}
+@media(max-width : 400px) {
+    .rama-lado-derecho {
+        transform: scale(2.4) rotate(270deg) scaleY(1) scaleX(1);
+        top: 10%;
+        right: -48.5vw;
+    }
 }
