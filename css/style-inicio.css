@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Pagina Inicio Caracteristicas generales*/
+.Inicio-contenedor-padre
+{
+    width: 96vw;
+    height: 100vh;
+    position: absolute;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9f0f1;
+    overflow: hidden;
+}
+/*Media Querys de Pagina de Inicio (General)*/
+@media (max-width : 991px )
+{
+    .Inicio-contenedor-padre
+    {
+        left: 7vw;
+        width: 93vw;
+    }
+}
+@media (max-width : 479px) 
+{
+    .Inicio-contenedor-padre 
+    {
+        left: 0vw;
+        width: 100vw;
+    }
+}
+
+/*Box contenedor de frase animada y foto de Einstein*/
+.contenedor-de-frase-y-foto-Einstein
+{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Media Querys de contenedor de frases y foto de Einstein*/
+@media( max-width : 1000px )
+{
+    .contenedor-de-frase-y-foto-Einstein
+    {
+        width: 85%;
+    }
+}
+@media(max-width : 800px) {
+    .contenedor-de-frase-y-foto-Einstein 
+    {
+        width: 95%;
+    }
+}
+@media(max-width : 650px) {
+    .contenedor-de-frase-y-foto-Einstein 
+    {
+        width: 98%;
+        flex-direction: column-reverse;
+        padding-top: 1vw;
+        gap: 2vw;
+    }
+}
+@media(max-width : 479px) {
+    .contenedor-de-frase-y-foto-Einstein 
+    {
+        width: 98%;
+        flex-direction: column-reverse;
+        gap: 2vw;
+        height: 57%;
+    }
+}
+/*Div contenedor de frases animadas*/
+.div-frases
+{
+    
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+}
+
+/*Cada renglon del parrafo animado: */
+.text-animado
+{
+    
+    line-height: 2;
+    font-size: calc(0.7em + 0.4vw);
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Raleway,
+    Montserrat,
+    "Cormorant Garamond",
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+.text1 span,
+.text2 span,
+.text3 span,
+.text4 span,
+.text5 span,
+.text6 span,
+.text7 span,
+.text8 span
+{
+    position: relative;
+    display: inline-block;
+   
+}
+/*Renglon con info sobre la Fuente de la frase animada*/
+.text8
+{
+    font-size: calc(0.63em + 0.33vw);
+    margin-top: 1vw;
+    font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+/*Media Querys de Texto de frases Animadas*/
+@media (min-width : 1601px) {
+    .text-animado {
+        font-size: calc(0.8em + 0.72vw);
+    }
+
+    .text8 {
+        font-size: calc(0.73em + 0.6vw);
+    }
+}
+@media ( max-width : 479px )
+{
+    .text-animado
+    {
+        font-size: calc(0.4em + 1.35vw);
+    }
+    .text8
+    {
+        font-size: calc(0.4em + 1.3vw);
+    }
+}
+/*Div contenedor de foto de Einstein*/
+.div-foto-einstein
+{
+    height: 70%;
+    min-height: 150px;
+}
+/*Media Querys de foto de Einstein*/
+@media ( max-width : 840px)
+{
+    .div-foto-einstein
+    {
+        height: 32vw;
+    }
+}
+@media (max-width : 650px) {
+    .div-foto-einstein 
+    {
+        height: 26vw;
+    }
+}
+
+/*Div que contiene nombre completo*/
+.div-titulo-con-nombreCompleto
+{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*Media Querys de div con titulo (el h1)*/
+@media ( max-width : 479px)
+{
+    .div-titulo-con-nombreCompleto
+    {
+        height: 28vw;
+    }
+}
+
+h1
+{
+    text-align: center;
+    font-size: calc(2.5em + 3vw) ;
+    font-family: "Cormorant Garamond", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 2;
+}
+/*Media Querys de h1 */
+@media (min-width : 1601px) 
+{
+    h1 
+    {
+        font-size: calc(2.5em + 4vw);
+    }
+}
+@media ( max-width : 479px )
+{
+    h1
+    {
+        font-size: calc(2.3em + 3vw);
+    }
+}
