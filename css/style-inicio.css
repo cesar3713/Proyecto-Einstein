@@ -55,7 +55,7 @@ img
     height: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;
 }
 
@@ -91,16 +91,40 @@ img
         height: 57%;
     }
 }
-/*Div contenedor de frases animadas*/
-.div-frases
+/*Div contenedor de frases animadas y botones que cambian la frase mostrada al usuario*/
+.div-frases-y-botones-de-seleccion-de-frase
 {
-    
-    width:auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0px;
+    /*border: 1px solid red;*/
+}
+
+/*Div contenedor de los tres botones cambiadores de frases*/
+.div-contenedor-botones-cambiadores-deFrases
+{
+    /*border: 1px solid green;*/
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2.5vw;
+}
+
+/*Botones caracteristicas generales*/
+.Boton-caracteristicas-generales
+{
+    width: 15%;
+    height: 90%;
+    min-height: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 /*Cada renglon del parrafo animado: */
@@ -133,7 +157,7 @@ img
 {
     position: relative;
     display: inline-block;
-   
+    color: rgba(0, 0, 0, 0);
 }
 /*Renglon con info sobre la Fuente de la frase animada*/
 .text8
@@ -169,8 +193,8 @@ img
         font-size: calc(0.4em + 1.3vw);
     }
 }
-/*Div contenedor de foto de Einstein*/
-.div-foto-einstein
+/*Img contenedor de foto de Einstein*/
+.foto-einstein
 {
     height: 70%;
     min-height: 150px;
@@ -178,13 +202,14 @@ img
 /*Media Querys de foto de Einstein*/
 @media ( max-width : 840px)
 {
-    .div-foto-einstein
+    .foto-einstein 
     {
         height: 32vw;
     }
 }
-@media (max-width : 650px) {
-    .div-foto-einstein 
+@media (max-width : 650px) 
+{
+    .foto-einstein
     {
         height: 26vw;
     }
