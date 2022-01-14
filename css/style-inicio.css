@@ -43,6 +43,7 @@ img
 {
     .Inicio-contenedor-padre 
     {
+        padding-top: 9%;
         left: 0vw;
         width: 100vw;
     }
@@ -60,7 +61,7 @@ img
 }
 
 /*Media Querys de contenedor de frases y foto de Einstein*/
-@media( max-width : 1000px )
+@media( max-width : 1200px )
 {
     .contenedor-de-frase-y-foto-Einstein
     {
@@ -78,7 +79,7 @@ img
     {
         width: 98%;
         flex-direction: column-reverse;
-        padding-top: 1vw;
+        padding-top: 3vw;
         gap: 2vw;
     }
 }
@@ -87,8 +88,8 @@ img
     {
         width: 98%;
         flex-direction: column-reverse;
-        gap: 2vw;
-        height: 57%;
+        gap: 2.5vw;
+        height: 67%;
     }
 }
 /*Div contenedor de frases animadas y botones que cambian la frase mostrada al usuario*/
@@ -100,13 +101,11 @@ img
     justify-content: space-around;
     align-items: center;
     gap: 0px;
-    /*border: 1px solid red;*/
 }
 
 /*Div contenedor de los tres botones cambiadores de frases*/
 .div-contenedor-botones-cambiadores-deFrases
 {
-    /*border: 1px solid green;*/
     width: 80%;
     height: 10%;
     display: flex;
@@ -114,24 +113,50 @@ img
     justify-content: space-evenly;
     align-items: center;
     margin-top: 2.5vw;
+    margin-bottom: -6%;
 }
 
-/*Botones caracteristicas generales*/
+/*Media Querys de div contenedor de botones cambiadores de frases*/
+@media( max-width : 479px ){
+    .div-contenedor-botones-cambiadores-deFrases
+    {
+        width: 90%;
+        margin-top: 5vw;
+    }
+}
+
+/*Botones caracteristicas generales (Botones que activan el evento click para cambiar de frase). Se los creó para poder hacer click mas facilmente ya que posee mas area de contacto para hacer click*/
 .Boton-caracteristicas-generales
 {
     width: 15%;
     height: 90%;
-    min-height: 10px;
+    min-height: 37px;
     border-radius: 3px;
-    border: 1px solid black;
+    border: none;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
+/*Botones con mejor UI (mas delgados) que se muestran al usuario para darle feedback sobre la frase que selecciona. Estan contenidos sobre los anteriores botones*/
+.botonesUI
+{
+    width: 100%;
+    height: 50%;
+    min-height: 5px;
+    border: 1px solid black;
+}
+/*Media Querys de BotonesUI*/
+@media( max-width : 650px ){
+    .botonesUI
+    {
+        height: 5%;
+    }
+}
 /*Cada renglon del parrafo animado: */
 .text-animado
 {
-    
-    line-height: 2;
     font-size: calc(0.7em + 0.4vw);
     text-align: center;
     letter-spacing: 1px;
@@ -146,6 +171,8 @@ img
     Verdana,
     sans-serif;
 }
+
+/*Span que se utiliza para animar los textos de frases*/
 .text1 span,
 .text2 span,
 .text3 span,
@@ -153,14 +180,19 @@ img
 .text5 span,
 .text6 span,
 .text7 span,
-.text8 span
+.text8 span,
+.text9 span,
+.text10 span,
+.text11 span,
+.text12 span
 {
     position: relative;
     display: inline-block;
     color: rgba(0, 0, 0, 0);
 }
+
 /*Renglon con info sobre la Fuente de la frase animada*/
-.text8
+.text12
 {
     font-size: calc(0.63em + 0.33vw);
     margin-top: 1vw;
@@ -178,7 +210,7 @@ img
         font-size: calc(0.8em + 0.72vw);
     }
 
-    .text8 {
+    .text12 {
         font-size: calc(0.73em + 0.6vw);
     }
 }
@@ -186,17 +218,18 @@ img
 {
     .text-animado
     {
-        font-size: calc(0.4em + 1.35vw);
+        font-size: calc(0.35em + 1.45vw);
     }
-    .text8
+    .text12
     {
-        font-size: calc(0.4em + 1.3vw);
+        font-size: calc(0.35em + 1.3vw);
+        margin-top: 3vw;
     }
 }
 /*Img contenedor de foto de Einstein*/
 .foto-einstein
 {
-    height: 70%;
+    height: calc(70% + 2vw) ;
     min-height: 150px;
 }
 /*Media Querys de foto de Einstein*/
@@ -230,7 +263,7 @@ img
 {
     .div-titulo-con-nombreCompleto
     {
-        height: 28vw;
+        height: 25vw;
     }
 }
 
