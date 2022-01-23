@@ -1,0 +1,140 @@
+/*Fuentes importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa76427290330fc67c72fc_TTCommons-Medium.woff') format('woff'), url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa76427290330fc67c72fc_TTCommons-Medium.woff') format('woff'), url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa76424d89a23c8644738e_TTCommons-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa7846743ca77dfea3ee3a_TTCommons-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Tsars A';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa7916b0428a6693cb701b_TTTsarsA-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Praho Pro';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa78bd9a79c2e0ad208d28_PrahoPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Praho Pro';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/604e24283704421ec65d8492_PrahoPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Praho Pro';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/5faa78bd274815370290d057_PrahoPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/60620abd1befc21bb204fe8e_TTCommons-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prahopro-edited-baseline';
+    src: url('https://uploads-ssl.webflow.com/5fa59418f129b3877929877d/609e6efa50870f05fa9b90eb_prahopro-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/**/
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Caracteristicas de Página Resumen en su totalidad (caracteristicas generales)*/
+.pag-resumen
+{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 300vh;
+    overflow-x: hidden;
+    background-color: none;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Boxs (Divs con imagenes, texto y demas en la pagina)*/
+
+/*Primer box de la pagina*/
+.box1-Pag-Resumen
+{
+    width: 70vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1vw;
+}
+
+.foto-Albert-pipa
+{
+    width: calc(22% + 1.5vw) ;
+}
+/*Caracteristicas generales de todos los textos en la pagina Resumen*/
+.text-Pag-Resumen
+{
+    font-family: 'TT Commons', cursive, sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.text1
+{
+    font-size:calc(0.4em + 1vw);
+    width: 30vw;
+    font-family: 'Praho Pro';
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    line-height: 2;
+    letter-spacing: 0.01vw;
+    
+}

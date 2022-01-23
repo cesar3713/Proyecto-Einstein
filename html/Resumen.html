@@ -7,9 +7,13 @@
     <title>Einstein</title>
 
 
+    <!--Scripts de Scroll suave con Smooth Scroll
+    <script src="/js/smooth-scrollbar.js" defer></script>
+    <script src="/js/Mando-smoothScrollbar.js" defer></script>-->
+
     <!--Scripts para importar iconos de ionic.io-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" async></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" async></script>
+    <script nomodule src="/js/ionicons.js" async></script>
 
     <!--Script de barra lateral y menu hamburguesa-->
     <script type="module" src="/js/barraLateralYMenuHamburguesa.js" defer></script>
@@ -17,7 +21,9 @@
     <!--Estilos Css-->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style-gral.css">
-
+    <link rel="stylesheet" href="/css/style-resumen.css">
+    <link rel="stylesheet" href="/css/smooth-scrollbar.css">
+    
 </head>
 <body>
 
@@ -41,11 +47,13 @@
 
     <!--Violin-->
 
-    <img src="imagenes/62812violin_109329.svg" alt="violin" class="violin-musica" title="Albert Einstein heredó el talento de su madre para la música, tocaba el violín y además de la ciencia, la música era su otra gran pasión. Mozart, junto con Bach, eran sus compositores favoritos.">
+    <img src="/imagenes/62812violin_109329.svg" alt="violin" class="violin-musica" title="Albert Einstein heredó el talento de su madre para la música, tocaba el violín y además de la ciencia, la música era su otra gran pasión. Mozart, junto con Bach, eran sus compositores favoritos.">
+
+    </div>
 
     <!--Pagina Navegacion-->
 
-    <section class="pag-Navegacion">
+    <section class="pag-Navegacion" id="fixedPagNav">
 
         <!--Contenedor de las Tarjetas-->
         <div class="box-tarjetas">
@@ -82,7 +90,7 @@
 
                 <div class="contenido-tarjeta contenido-resumen">
 
-                    <a href="">Resumen</a>
+                    <a href="/html/Resumen.html">Resumen</a>
                     
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo nemo mollitia unde iure natus magni? </p>
 
@@ -173,7 +181,7 @@
 
             <div class="box-contiene-rama-junto-a-esfera">
                 <div class="div-inicio-pag-nav div-contenedor-esfera">
-                    <a href="" class="pag-nav-enlace-inicio a-enlaces-esfera">Inicio</a>
+                    <a href="/index.html" class="pag-nav-enlace-inicio a-enlaces-esfera">Inicio</a>
                 </div>
                 <svg viewBox="0 0 704.29498 530.39148" xmlns="http://www.w3.org/2000/svg" class="rama3 ramas-estilo-general ramas-de-esferas">
                 <g transform="translate(-16.603 -141.9)">
@@ -289,6 +297,17 @@
        
     </section>
 
-    
+    <!--Sección Página Resumen-->
+    <section class="pag-resumen">
+
+        <div class="box1-Pag-Resumen">
+            <img src="/imagenes/Albert-Einstein-pipa.jpg" alt="" class="foto-Albert-pipa">
+
+            <p class="text-Pag-Resumen text1">Albert Einstein (alemán, Imperio alemán; 14 de marzo de 1879-Princeton, Estados Unidos; 18 de abril de 1955) fue un físico alemán de origen judío, nacionalizado después suizo, austriaco y estadounidense. Se le considera el científico más importante, conocido y popular del siglo XX.</p>
+        </div>
+
+    </section>
+
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 let barraLateral = document.querySelector(".columna-navegacion")
 let navigation = document.querySelector(".pag-Navegacion")
 let menutoggle = document.querySelector(".toggle");
+let pagResumen = document.querySelector(".pag-resumen");
 
     /*Hover en barra lateral y en menu hamburguesa*/
 

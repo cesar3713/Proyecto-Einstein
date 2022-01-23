@@ -24,14 +24,17 @@ const textV10 = document.querySelector(".text10");
 const textV11 = document.querySelector(".text11");
 const textV12 = document.querySelector(".text12");
 
+/*Array con todos los renglones*/
+const a = [textV1,textV2,textV3,textV4,textV5,textV6,textV7,textV8,textV9,textV10,textV11,textV12];
+
 ////////////////////////////Evento por defecto al iniciar el Sitio web///////////////////////////////
 
 botonFrase1UI.style.backgroundColor = "rgba(0, 0, 0, 0.651)";
 botonFrase2UI.style.backgroundColor = "rgba(0, 0, 0, 0)";
 botonFrase3UI.style.backgroundColor = "rgba(0, 0, 0, 0)";
 
+/*Propiedad CSS Line-Height (Interlineado)*/
 for( let i = 0 ; i < 12 ; i++ ){
-    const a = [textV1,textV2,textV3,textV4,textV5,textV6,textV7,textV8,textV9,textV10,textV11,textV12];
     a[i].style.lineHeight = 2.28;
 }
 
@@ -109,7 +112,6 @@ botonFrase1.onclick = function(){
 
     /*Propiedad CSS Line-Height (Interlineado)*/
     for( let i = 0 ; i < 12 ; i++ ){
-        const a = [textV1,textV2,textV3,textV4,textV5,textV6,textV7,textV8,textV9,textV10,textV11,textV12];
         a[i].style.lineHeight = 2.28;
     }
 
@@ -182,8 +184,7 @@ botonFrase2.onclick = function(){
 
     /*Propiedad CSS Line-Height (Interlineado)*/
     for( let i = 0 ; i < 12 ; i++ ){
-        const a = [textV1,textV2,textV3,textV4,textV5,textV6,textV7,textV8,textV9,textV10,textV11,textV12];
-        a[i].style.lineHeight = 1.32;
+        a[i].style.lineHeight = 1.31;
     }
 
     /*Agregando contenido de la frase (texto) a cada renglon*/
@@ -260,8 +261,7 @@ botonFrase3.onclick = function(){
 
     /*Propiedad CSS Line-Height (Interlineado)*/
     for( let i = 0 ; i < 12 ; i++ ){
-        const a = [textV1,textV2,textV3,textV4,textV5,textV6,textV7,textV8,textV9,textV10,textV11,textV12];
-        a[i].style.lineHeight = 1.59;
+        a[i].style.lineHeight = 1.58;
     }
 
     /*Agregando contenido de la frase (texto) a cada renglon*/

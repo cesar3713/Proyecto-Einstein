@@ -22,22 +22,24 @@ img
 body
 {
     width: 100%;
+    overflow-x: hidden;
 }
 
 /*Barra de Scroll*/
-
+/*
 body::-webkit-scrollbar 
 {
-    width: 3px;
-    backdrop-filter: blur(0.1px);
-    background-color: rgba(244, 246, 251, .01);
+    width: 0.7vw;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 body::-webkit-scrollbar-thumb 
 {
-    background-color: #358cd8c5;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.237);
+    border-radius: 12px;
 }
+*/
 
 /*          Z-INDEX : columna-navegacion = 10000
                       pag-Navegacion = 7500
@@ -62,10 +64,12 @@ body::-webkit-scrollbar-thumb
     align-items: center;
     z-index: 10000;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /*background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);*/
+    background-color: none;
+    backdrop-filter: blur(0.02px);
 }
 
+/*Nombre "Albert Einstein" en columna de navegacion*/
 .nav-nombre
 {
     transform: rotate(-90deg);
@@ -96,7 +100,6 @@ body::-webkit-scrollbar-thumb
 }
     
 /*Menu hamburguesa*/
-
 .toggle
 {
     position: fixed;
@@ -104,8 +107,6 @@ body::-webkit-scrollbar-thumb
     left: 0.5vw;
     width: 3vw;
     height: 3vw;
-    border: 1px solid blue;
-    border: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -251,7 +252,6 @@ body::-webkit-scrollbar-thumb
 
 
 /*Pagina de navegacion*/
-
 .pag-Navegacion {
     position: fixed;
     top: 0;
@@ -264,6 +264,8 @@ body::-webkit-scrollbar-thumb
     transform: translate(-100%, 0%);
     z-index: 7500;
     background-color: #e9f0f1;
+    overflow: hidden;
+    /*background-color: black;*/
 }
 /*Media Querys de Pagina de Navegacion*/
 @media( max-width : 479px)
